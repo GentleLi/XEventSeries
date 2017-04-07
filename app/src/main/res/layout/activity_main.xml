@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lt_gray"
+    tools:context="com.android.tao.xeventseries.MainActivity">
+
+    <com.android.tao.xeventseries.view.XStrokeRoundRectButton
+        android:id="@+id/xbtn_one"
+        android:layout_width="@dimen/dp_100"
+        android:layout_height="@dimen/dp_50"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:clickable="true"
+        android:text="点我"
+        app:borderColor="@color/colorPrimary"
+        app:borderWidth="@dimen/dp_2"
+        app:disableColor="@color/gray"
+        app:enableColor="@color/colorAccent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.094"
+        app:radius="@dimen/dp_20" />
+
+    <com.android.tao.xeventseries.view.XStrokeRoundRectButton
+        android:id="@+id/xbtn_two"
+        android:layout_width="@dimen/dp_150"
+        android:layout_height="@dimen/dp_50"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:clickable="true"
+        android:text="圆角按钮"
+        app:borderColor="@color/yellow"
+        app:borderWidth="@dimen/dp_2"
+        app:disableColor="@color/gray"
+        app:enableColor="@color/purple"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/xbtn_one"
+        app:layout_constraintVertical_bias="0.066"
+        app:radius="@dimen/dp_20" />
+
+</android.support.constraint.ConstraintLayout>
